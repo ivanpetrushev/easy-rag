@@ -144,42 +144,100 @@ Based on the context provided, the maintenance manual covers the following Think
 
 
 
-Enter query: What health hazards exist 
+Enter query: how to be safe around devices emitting laser radiation?
 Running chain...
-Time elapsed: 2.58 s
-I don't know.
+Time elapsed: 2.26 s
+Do not stare into the beam, do not view directly with optical instruments, and avoid direct exposure to the beam.
 
-The given context documents do not contain any information about health hazards. The documents provide details about part numbers, RoHS compliance, and instructions for disassembling a device. There is no mention of any potential health hazards.
-
-- Source: t60.pdf, Page: 211, Relevance: 0
-- Source: t60.pdf, Page: 11, Relevance: 0 
-- Source: t60.pdf, Page: 140, Relevance: 0
-- Source: t60.pdf, Page: 111, Relevance: 0
+- Source: t60.pdf, Page: 26, Relevance: 100
+- Source: t60.pdf, Page: 25, Relevance: 100
 
 
 
-Enter query: how to install graphic drivers
+Enter query: how to protect equipment from ESD?
 Running chain...
-Time elapsed: 2.51 s
-I don't know.
+Time elapsed: 3.32 s
+Wear a grounded wrist strap against your skin to eliminate static on your body. Prevent the part from touching your clothing, as most clothing is insulative and retains a charge even when you are wearing a wrist strap. Use the black side of a grounded work mat to provide a static-free work surface. Select a grounding system, such as attaching the ESD ground clip to any frame ground, ground braid, or green-wire ground, to provide protection that meets the specific service requirement.
 
-The provided context documents do not contain any information about how to install graphic drivers. The documents appear to be focused on ThinkPad T60 hardware maintenance and troubleshooting, and do not cover software installation or driver installation.
-
-- Source: t60.pdf, Page: 49, Relevance: 50
-- Source: t60.pdf, Page: 102, Relevance: 40
-- Source: t60.pdf, Page: 36, Relevance: 20
-- Source: t60.pdf, Page: 131, Relevance: 30
+- Source: t60.pdf, Page: 24, Relevance: 100
+- Source: t60.pdf, Page: 24, Relevance: 100
+- Source: t60.pdf, Page: 22, Relevance: 100
 
 
 
-Enter query: how to troubleshoot driver issues
+Enter query: what is ESD?
 Running chain...
-Time elapsed: 2.49 s
-Based on the provided context, the answer to the question "how to troubleshoot driver issues" is not directly covered. The context focuses on general troubleshooting procedures for a ThinkPad computer and does not specifically address driver issues.
+Time elapsed: 1.60 s
+Electrostatic Discharge (ESD).
 
-- Source: t60.pdf, Page: 36, Relevance: 70
-- Source: t60.pdf, Page: 49, Relevance: 60
-- Source: t60.pdf, Page: 8, Relevance: 50
+- Source: t60.pdf, Page: 24, Relevance: 100
+- Source: t60.pdf, Page: 24, Relevance: 100
+- Source: t60.pdf, Page: 18, Relevance: 50
+
+
+
+Enter query: What voltage is the motherboard backup battery?
+Running chain...
+Time elapsed: 1.59 s
++2.5 to +3.2 V dc
+
+- Source: t60.pdf, Page: 41, Relevance: 100
+- Source: t60.pdf, Page: 16, Relevance: 50
+
+
+
+
+Enter query: system doesnt power up and I hear three beeps   
+Running chain...
+Time elapsed: 1.59 s
+Three short beeps, pause, three more short beeps, and one short beep indicate that the DIMM may need to be reseated, or the system board may need replacement.
+
+- Source: t60.pdf, Page: 59, Relevance: 100
+
+
+
+Enter query: what does orange blinking power led mean?
+Running chain...
+Time elapsed: 2.16 s
+The battery is charged between 5% to 20% of the capacity, and being charged.
+
+- Source: t60.pdf, Page: 47, Relevance: 100
+- Source: t60.pdf, Page: 47, Relevance: 100
+
+
+Enter query: what battery charge indication is available for different charge levels?
+Running chain...
+Time elapsed: 2.45 s
+The battery charge indication available for different charge levels is:
+
+- Green: The battery is charged between 80% to 100% of the capacity, and being discharged between 0% to 80% of the capacity.
+- Blinking green: The battery is charged between 20% to 80% of the capacity, and being charged.
+- Orange: The battery is charged between 5% and 20% of the capacity, and being discharged.
+- Blinking orange (slow): The battery is charged between 5% to 20% of the capacity, and being charged.
+- Blinking orange (rapid): The battery is charged between 0% to 5% of the capacity.
+
+- Source: t60.pdf, Page: 47, Relevance: 100
+- Source: t60.pdf, Page: 40, Relevance: 90
+
+
+
+Enter query: what led indiciations are available on t60?
+Running chain...
+Time elapsed: 1.28 s
+The status indicators available on the ThinkPad T60 and T60p are listed in the context documents.
+
+- Source: t60.pdf, Page: 41, Relevance: 100
+
+
+
+Enter query: what led status indicators are there
+Running chain...
+Time elapsed: 1.37 s
+12
+
+- Source: t60.pdf, Page: 46, Relevance: 100
+- Source: t60.pdf, Page: 47, Relevance: 100
+- Source: t60.pdf, Page: 48, Relevance: 100
 
 
 
