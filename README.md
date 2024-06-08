@@ -16,7 +16,7 @@ Use case: seed knowledge with maintenance manuals, ask questions for troubleshoo
 ## Prerequisites
 
 - Docker
-- AWS credentials with Bedrock access (ask @ivan.petrushev, if uncertain)
+- AWS credentials with Bedrock access (bedrock:invokeModel permission)
 
 ## Installation
 
