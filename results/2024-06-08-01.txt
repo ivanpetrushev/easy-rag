@@ -1,0 +1,185 @@
+Enter query: what is your name
+Running chain...
+Time elapsed: 2.70 s
+I don't know. The given context documents do not contain any information about my name.
+
+- Source: t60.pdf, Page: 31, Relevance: 0
+- Source: t60.pdf, Page: 50, Relevance: 0 
+- Source: t60.pdf, Page: 30, Relevance: 0
+- Source: t60.pdf, Page: 40, Relevance: 0
+
+
+
+Enter query: what categories of malfunctions are described in docs?
+Running chain...
+Time elapsed: 5.55 s
+Based on the provided context, the documents describe the following categories of malfunctions:
+
+- CPU/Coprocessor issues
+- Systemboard issues
+- Video Adapter issues
+- Serial Port issues
+- Parallel Port issues
+- Fixed Disk issues
+- Diskette Drive issues
+- Communication issues
+- Wireless LAN issues
+- Memory issues
+- Keyboard issues
+- Video issues
+- Internal Speaker issues
+- Mouse issues
+- Diskette issues
+- CD-ROM/DVD issues
+- Intel Wireless Radio issues
+
+The context documents do not appear to provide a comprehensive list of all possible malfunctions, but rather focus on describing the various diagnostic test options available in the PC-Doctor for DOS diagnostic program.
+
+- Source: t60.pdf, Page: 38, Relevance: 90
+- Source: t60.pdf, Page: 36, Relevance: 85
+- Source: t60.pdf, Page: 39, Relevance: 80
+- Source: t60.pdf, Page: 28, Relevance: 75
+
+
+
+Enter query: What can PC-Doctor be used for?
+Running chain...
+Time elapsed: 4.97 s
+According to the context provided, PC-Doctor for DOS can be used to:
+
+- Test various hardware components of a ThinkPad computer, including:
+    - Digital Signature Chip
+    - Serial Ports
+    - Parallel Ports
+    - CPU/Coprocessor
+    - Systemboard
+    - Video Adapter
+    - Fixed Disks
+    - Diskette Drives
+    - Memory
+    - Keyboard
+    - Video
+    - Internal Speaker
+    - Mouse
+    - Diskette
+    - CD-ROM/DVD
+    - Intel Wireless Radio
+- Detect and display system information, such as:
+    - System Configuration
+    - Memory Contents
+    - Physical Disk Drives
+    - Logical Disk Drives
+    - VGA Information
+    - IDE Drive Info
+    - PCI Information
+    - PNPISA Info
+    - SMBIOS Info
+    - VESA LCD Info
+    - Hardware Events Log
+
+So in summary, PC-Doctor for DOS can be used to test hardware components and detect system information on ThinkPad computers.
+
+List of context documents:
+- Source: t60.pdf, Page: 38, Relevance: 100
+- Source: t60.pdf, Page: 36, Relevance: 100
+- Source: t60.pdf, Page: 37, Relevance: 100
+
+
+
+Enter query: How can IDE drive information be obtained?
+Running chain...
+Time elapsed: 2.06 s
+Based on the provided context, the IDE drive information can be obtained by entering the BIOS Setup Utility and changing the Serial ATA (SATA) setting to Compatibility, then running the Diagnostics -> Fixed Disks option.
+
+- Source: t60.pdf, Page: 49, Relevance: 90
+- Source: t60.pdf, Page: 37, Relevance: 80
+
+
+
+Enter query: What types of network interfaces are supported by T60?
+Running chain...
+Time elapsed: 3.37 s
+Based on the provided context, the documents do not directly mention the types of network interfaces supported by the ThinkPad T60. The context focuses on providing general information about the T60 manual, safety information, and a list of supported hard disk drives and Ultrabay Slim devices. There is no information about the network interfaces supported by the T60. Therefore, I don't know the answer to this question.
+
+- Source: t60.pdf, Page: 6, Relevance: 80
+- Source: t60.pdf, Page: 216, Relevance: 60
+- Source: t60.pdf, Page: 0, Relevance: 70
+- Source: t60.pdf, Page: 44, Relevance: 70
+
+
+
+Enter query: What is the difference between T60 and T60p?
+Running chain...
+Time elapsed: 3.25 s
+Based on the provided context, the difference between the ThinkPad T60 and T60p models is not explicitly stated. The context provides general information about the manual and service information for the ThinkPad T60 and T60p (14.1-inch and 15.0-inch) products, but does not specify the differences between the T60 and T60p models.
+
+- Source: [t60.pdf], Page: 6, Relevance: 80
+- Source: [t60.pdf], Page: 216, Relevance: 70
+- Source: [t60.pdf], Page: 0, Relevance: 90
+
+
+
+Enter query: What T60 models are covered in the maintenance manual?
+Running chain...
+Time elapsed: 3.04 s
+Based on the context provided, the maintenance manual covers the following ThinkPad T60 and T60p models:
+
+- 1951-CTO
+- 1952-CTO 
+- 1953-CTO, DBx, DCx
+- 1954-CTO
+- 1955-CTO
+- 1956-CTO
+- 2007-CTO
+- 2008-CTO
+- 2009-CTO
+- 2613-CTO, K9x, KAx, KBx, KCx
+- 2623-CTO
+- 2637-CTO
+
+- Source: t60.pdf, Page: 214, Relevance: 100
+- Source: t60.pdf, Page: 6, Relevance: 80
+- Source: t60.pdf, Page: 2, Relevance: 80
+- Source: t60.pdf, Page: 0, Relevance: 80
+
+
+
+Enter query: What health hazards exist 
+Running chain...
+Time elapsed: 2.58 s
+I don't know.
+
+The given context documents do not contain any information about health hazards. The documents provide details about part numbers, RoHS compliance, and instructions for disassembling a device. There is no mention of any potential health hazards.
+
+- Source: t60.pdf, Page: 211, Relevance: 0
+- Source: t60.pdf, Page: 11, Relevance: 0 
+- Source: t60.pdf, Page: 140, Relevance: 0
+- Source: t60.pdf, Page: 111, Relevance: 0
+
+
+
+Enter query: how to install graphic drivers
+Running chain...
+Time elapsed: 2.51 s
+I don't know.
+
+The provided context documents do not contain any information about how to install graphic drivers. The documents appear to be focused on ThinkPad T60 hardware maintenance and troubleshooting, and do not cover software installation or driver installation.
+
+- Source: t60.pdf, Page: 49, Relevance: 50
+- Source: t60.pdf, Page: 102, Relevance: 40
+- Source: t60.pdf, Page: 36, Relevance: 20
+- Source: t60.pdf, Page: 131, Relevance: 30
+
+
+
+Enter query: how to troubleshoot driver issues
+Running chain...
+Time elapsed: 2.49 s
+Based on the provided context, the answer to the question "how to troubleshoot driver issues" is not directly covered. The context focuses on general troubleshooting procedures for a ThinkPad computer and does not specifically address driver issues.
+
+- Source: t60.pdf, Page: 36, Relevance: 70
+- Source: t60.pdf, Page: 49, Relevance: 60
+- Source: t60.pdf, Page: 8, Relevance: 50
+
+
+

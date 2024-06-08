@@ -1,0 +1,186 @@
+Enter query: what screen resolutions are supported?
+Running chain...
+Time elapsed: 2.83 s
+XGA (1024 × 768), SXGA+ (1400 × 1050), and UXGA (1600 × 1200) resolutions are supported.
+
+- Source: t60.pdf, Page: 44, Relevance: 100
+- Source: t60.pdf, Page: 177, Relevance: 100
+- Source: t60.pdf, Page: 184, Relevance: 100
+- Source: t60.pdf, Page: 185, Relevance: 100
+
+
+
+Enter query: I have 5 dead pixels on the screen. Is this covered by the warranty?
+Running chain...
+Time elapsed: 2.94 s
+According to the context, the minimum quantity of defective pixels required for LCD replacement on June 2006 or later manufactured ThinkPad notebooks is:
+
+WXGA+, SXGA+, WSXGA+: 5 bright dots, 8 dark dots, or 10 bright and dark dots.
+
+Therefore, 5 dead pixels on the screen would be within the warranty specification, and the LCD would not be replaced.
+
+- Source: t60.pdf, Page: 60, Relevance: 100
+- Source: t60.pdf, Page: 29, Relevance: 80
+
+
+
+Enter query: what types of screen panels are supported? is IPS supported?
+Running chain...
+Time elapsed: 3.91 s
+The context indicates that the following display options are supported:
+
+- 14.1-inch, 16M colors, XGA (1024 × 768 resolution) TFT color LCD
+- 14.1-inch, 16M colors, SXGA+ (1400 × 1050 resolution) TFT color LCD
+- 15.0-inch, 16M colors, XGA (1024 × 768 resolution) TFT color LCD
+- 15.0-inch, 16M colors, SXGA+ (1400 × 1050 resolution) IPS (in-plane switching) TFT color LCD
+- 15.0-inch, 16M colors, UXGA (1600 × 1200 resolution) IPS TFT color LCD
+
+So yes, IPS display panels are supported.
+
+- Source: t60.pdf, Page: 44, Relevance: 100
+- Source: t60.pdf, Page: 198, Relevance: 100
+- Source: t60.pdf, Page: 208, Relevance: 100
+
+
+
+Enter query: what is the difference between TFT and IPS?
+Running chain...
+Time elapsed: 4.67 s
+The main difference between TFT (Thin Film Transistor) and IPS (In-Plane Switching) is the display technology they use:
+
+- TFT uses a traditional LCD (Liquid Crystal Display) technology where the liquid crystal molecules are oriented perpendicular to the screen.
+- IPS uses an advanced LCD technology where the liquid crystal molecules are oriented parallel to the screen. This results in wider viewing angles, better color accuracy, and improved contrast compared to standard TFT displays.
+
+- IPS displays are generally considered to provide superior image quality and viewing experience compared to standard TFT displays.
+
+- The context documents mention that the 15.0-inch SXGA+ and UXGA displays use IPS TFT technology, while the 14.1-inch and 15.0-inch XGA and SXGA+ displays use standard TFT technology.
+
+- The documents also indicate that the 15.0-inch SXGA+ and UXGA displays have higher resolutions and image quality compared to the other display options.
+
+- The differences between TFT and IPS are primarily related to the LCD panel technology used, which impacts the display's visual characteristics and performance.
+
+Key sources:
+- Source: t60.pdf, Page: 44, Relevance: 90
+- Source: t60.pdf, Page: 177, Relevance: 80
+- Source: t60.pdf, Page: 198, Relevance: 90
+
+
+
+Enter query: what network adapters are supported by T60?
+Running chain...
+Time elapsed: 1.63 s
+802.11 b/g
+
+- Source: t60.pdf, Page: 142, Relevance: 100
+- Source: t60.pdf, Page: 178, Relevance: 100
+- Source: t60.pdf, Page: 198, Relevance: 100
+
+
+
+Enter query: what is the difference between 802.11 b and g standards?
+Running chain...
+Time elapsed: 2.04 s
+I don't know.
+
+- Source: t60.pdf, Page: 198, Relevance: 0
+- Source: t60.pdf, Page: 177, Relevance: 0 
+- Source: t60.pdf, Page: 202, Relevance: 0
+- Source: t60.pdf, Page: 193, Relevance: 0
+
+The given context does not contain any information about the differences between 802.11b and 802.11g wireless standards.
+
+
+
+Enter query: what common faults are listed in network adapters?
+Running chain...
+Time elapsed: 2.54 s
+I don't know.
+
+- Source: t60.pdf, Page: 55, Relevance: 80
+- Source: t60.pdf, Page: 42, Relevance: 60
+- Source: t60.pdf, Page: 58, Relevance: 70
+- Source: t60.pdf, Page: 56, Relevance: 80
+
+The provided context does not contain information about common faults in network adapters. The documents mention error messages and troubleshooting steps related to various system components, but do not specifically address issues with network adapters.
+
+
+
+Enter query: network adapter keep dropping packets
+Running chain...
+Time elapsed: 2.48 s
+I don't know.
+
+- Source: t60.pdf, Page: 39, Relevance: 30
+- Source: t60.pdf, Page: 61, Relevance: 30
+- Source: t60.pdf, Page: 39, Relevance: 40
+- Source: t60.pdf, Page: 37, Relevance: 20
+
+The provided context does not contain information about a network adapter dropping packets. The context is focused on troubleshooting power-related issues with a ThinkPad computer, and does not mention network connectivity problems.
+
+
+
+Enter query: what is power on password?
+Running chain...
+Time elapsed: 1.55 s
+A power-on password (POP) protects the system from being powered on by an unauthorized person. The password must be entered before an operating system can be booted.
+
+- Source: t60.pdf, Page: 31, Relevance: 100
+- Source: t60.pdf, Page: 32, Relevance: 100
+- Source: t60.pdf, Page: 31, Relevance: 100
+
+
+
+Enter query: how to remove power on password?
+Running chain...
+Time elapsed: 3.37 s
+To remove a power-on password (POP) that has been forgotten:
+
+1. If no supervisor password (SVP) has been set:
+   - Turn off the computer.
+   - Remove the battery pack.
+   - Remove the backup battery.
+   - Turn on the computer and wait until the POST ends. The POP has been removed.
+   - Reinstall the backup battery and the battery pack.
+
+2. If an SVP has been set and is known by the servicer:
+   - Turn on the computer and press the ThinkVantage button to open the Rescue and Recovery screen.
+   - Enter the POP.
+   - Click Access BIOS, restart the computer, and enter the BIOS Setup Utility.
+   - Select Security, then Password, and select Hard-disk x password.
+   - Enter the current master HDP, leave the new password field blank, and press Enter twice.
+   - Press F10 and select Yes to save the changes. Both the user HDP and master HDP will have been removed.
+
+- Source: t60.pdf, Page: 32-33, Relevance: 100
+
+
+
+Enter query: I am asked on every boot to set date and time in BIOS. Why?
+Running chain...
+Time elapsed: 3.38 s
+The battery is dead or low. According to the context:
+
+- Error 0270 indicates a real-time clock error, which means the date and time are not set correctly. The solution provided is to "Charge the backup battery for more than 8 hours by connecting the ac adapter" and "Replace the backup battery and run BIOS Setup Utility to reset the time and date."
+- Error 0271 also indicates "Date and time error—Neither the date nor the time is set in the computer. Run BIOS Setup Utility to reset the time and date."
+
+So the reason you are asked to set the date and time in BIOS on every boot is that the system battery is dead or low, causing the real-time clock to lose its settings.
+
+- Source: t60.pdf, Page: 55-56, Relevance: 100
+
+
+
+Enter query: how to replace the backup battery?
+Running chain...
+Time elapsed: 2.65 s
+Replace the backup battery as follows:
+1. Power off the computer and unplug the AC adapter.
+2. Turn the computer upside down and remove the battery pack.
+3. Remove the backup battery.
+4. Measure the voltage of the backup battery. If it is not correct (2.5V to 3.2V), replace the backup battery.
+5. If the backup battery discharges quickly after replacement, replace the system board.
+
+- Source: t60.pdf, Page: 41, Relevance: 100
+- Source: t60.pdf, Page: 90, Relevance: 100
+- Source: t60.pdf, Page: 68, Relevance: 100
+
+
+

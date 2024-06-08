@@ -1,0 +1,102 @@
+Enter query: how to troubleshoot blinking screen?
+Running chain...
+Time elapsed: 2.96 s
+Based on the provided context, the answer is:
+
+One long and two short beeps, and a blank or unreadable LCD:
+1. System board
+2. LCD assembly
+3. DIMM
+
+- Source: t60.pdf, Page: 59, Relevance: 90
+- Source: t60.pdf, Page: 60, Relevance: 90
+
+
+
+Enter query: steps to dissasemble keyboard
+Running chain...
+Time elapsed: 2.40 s
+To disassemble the keyboard, the steps are:
+1. Remove the battery pack and palm rest/palm rest with fingerprint reader.
+2. Release the keyboard connector and detach it.
+3. Remove the screws securing the keyboard bezel and lift it off.
+
+- Source: t60.pdf, Page: 80, Relevance: 100
+- Source: t60.pdf, Page: 92, Relevance: 100
+- Source: t60.pdf, Page: 76, Relevance: 50
+
+
+
+Enter query: steps to dissasemble cpu heatsink
+Running chain...
+Time elapsed: 3.55 s
+The steps to disassemble the CPU heatsink are:
+
+1. Remove the CPU support plate.
+2. Apply 0.2 grams of thermal grease on the marked part when installing the fan assembly.
+3. Make sure the fan connector is attached firmly.
+4. Be careful not to damage the heatsink when attaching the fan assembly.
+
+- Source: t60.pdf, Page: 114, Relevance: 80
+- Source: t60.pdf, Page: 96, Relevance: 90
+- Source: t60.pdf, Page: 98, Relevance: 70
+
+
+
+Enter query: what is CPU support plate? 
+Running chain...
+Time elapsed: 1.68 s
+The CPU support plate is a component that is attached to the system board to help secure the CPU.
+
+- Source: t60.pdf, Page: 117, Relevance: 80
+- Source: t60.pdf, Page: 98, Relevance: 90
+
+
+
+Enter query: what is CPU?
+Running chain...
+Time elapsed: 2.31 s
+CPU stands for Central Processing Unit. It is the main component of a computer that performs the majority of the data processing and control functions.
+
+- Source: t60.pdf, Page: 98, Relevance: 100
+- Source: t60.pdf, Page: 166, Relevance: 100
+- Source: t60.pdf, Page: 167, Relevance: 100
+- Source: t60.pdf, Page: 169, Relevance: 100
+
+
+
+Enter query: what external connectors are on T60?
+Running chain...
+Time elapsed: 2.46 s
+The external connectors on the ThinkPad T60 include:
+- USB connector
+- Stereo headphone jack
+- Microphone jack
+- RJ-45 (Ethernet) connector
+- RJ-11 (modem) connector
+- External monitor connector
+- AC power connector
+
+- Source: t60.pdf, Page: 134, Relevance: 100
+- Source: t60.pdf, Page: 216, Relevance: 80
+- Source: t60.pdf, Page: 142, Relevance: 70
+- Source: t60.pdf, Page: 178, Relevance: 50
+
+
+
+Enter query: is the headphone jack different than the microphone jack?
+Running chain...
+Time elapsed: 1.51 s
+Yes, the headphone jack and microphone jack are different features.
+
+- Source: t60.pdf, Page: 45, Relevance: 100
+- Source: t60.pdf, Page: 222, Relevance: 50
+
+
+
+Enter query: what is the RJ-11 connector? 
+Running chain...
+Time elapsed: 2.31 s
+The RJ-11 connector is an I/O port feature described in the context. According to the documents, the ThinkPad T60 has an RJ-11 connector.
+
+- Source: t60.pdf, Page: 45, Relevance: 100
