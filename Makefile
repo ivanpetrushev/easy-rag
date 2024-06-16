@@ -10,5 +10,8 @@ build-images-quick:
 run-pdfloader: build-images-quick
 	docker run -it --env-file .env ${IMG_NAME}:latest python3 pdfloader.py
 
+run-meetingloader: build-images-quick
+	docker run -it --env-file .env ${IMG_NAME}:latest python3 meetingloader.py
+	
 pip-freeze:
 	docker run -it --env-file .env ${IMG_NAME}:latest pip freeze
