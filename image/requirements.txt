@@ -12,4 +12,4 @@ pypdf==4.2.0
 # transformers==4.41.2
 # sentence-transformers==3.0.0
 langchainhub==0.1.20
-langchain-aws==0.1.6 # TODO: new version required to fix Claude3 tool use
+langchain-aws==0.1.7 # TODO: new version required to fix Claude3 tool use
