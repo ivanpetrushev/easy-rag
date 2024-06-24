@@ -2,7 +2,7 @@
 boto3==1.34.59
 # bs4==0.0.2
 # elasticsearch==8.12.1
-langchain==0.1.11
+langchain==0.2.5
 langchain-chroma==0.1.1
 # langchainhub==0.1.15
 # nanoid==2.0.0
@@ -11,3 +11,5 @@ pypdf==4.2.0
 # huggingface-hub==0.23.3
 # transformers==4.41.2
 # sentence-transformers==3.0.0
+langchainhub==0.1.20
+langchain-aws==0.1.7 # TODO: new version required to fix Claude3 tool use
