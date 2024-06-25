@@ -1,0 +1,3 @@
+add a new contact to my address book - her name is Alice and her email is alice@dot.com
+
+save a new contact to my address book - her name is Alice and her email is alice@dot.com. Explain the rationale behind your choice of tools.
