@@ -1,3 +1,9 @@
-add a new contact to my address book - her name is Alice and her email is alice@dot.com
+add a new contact - her name is Alice and her email is alice@dot.com
 
-save a new contact to my address book - her name is Alice and her email is alice@dot.com. Explain the rationale behind your choice of tools.
+send email to Alice with a greeting
+
+send a message to Alice asking her when exactly tonight meeting is?
+
+Send a random color to google chat test_bot_space. Use complex colors out of the ordinary R, G, B.
+
+ask in the same workspace if people know you
