@@ -55,7 +55,6 @@ def send_message_to_google_chat_workspace(workspace_name: str, message: str):
     workspace_webhooks = {
         "test_bot_space": os.environ.get("GCHAT_TEST_BOT_SPACE_WEBHOOk"),
     }
-    print(f"workspace_webhooks: {workspace_webhooks}")
     if workspace_name not in workspace_webhooks:
         return f"Webhook for workspace not found: {workspace_name}"
     
