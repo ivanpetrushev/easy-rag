@@ -13,5 +13,11 @@ run-pdfloader: build-images-quick
 run-tools: build-images-quick
 	docker run -it --env-file .env -v ${PWD}/chromadb:/chromadb/ ${IMG_NAME}:latest python3 tool-usage.py
 
+run-chromadb-query: build-images-quick
+	docker run -it --env-file .env -v ${PWD}/chromadb:/chromadb/ ${IMG_NAME}:latest python3 chromadb-query.py
+
+chromadb-cleanup:
+	sudo rm -rf chromadb/*
+
 pip-freeze:
 	docker run -it --env-file .env ${IMG_NAME}:latest pip freeze

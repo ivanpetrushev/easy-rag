@@ -96,11 +96,11 @@ def load_chromadb():
         print(f"ChromaDB data not found in /chromadb")
     
 @tool
-def t60_t14_retriever(query: str) -> str:
+def t60_t14_p50_retriever(query: str) -> str:
     """
-    Retrieve information from the T60 or T14 database based on the query.
+    Retrieve information from the P50, T60 or T14 database based on the query.
     Usage:
-    - Use this when asked technical information about T60 and T14.
+    - Use this when asked technical information about P50, T60 and T14.
     - Pass the whole user input as `query` parameter.
     Output format instructions:
     1. Start with the direct answer to the query without any preamble.
