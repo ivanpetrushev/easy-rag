@@ -120,17 +120,21 @@ if __name__ == "__main__":
         # use ChromaDB from disk
         db = Chroma(persist_directory="/chromadb", embedding_function=embeddings)
     else:
-        filenames = ["t60.pdf", "t14_gen_1.pdf"]
+        filenames = ["t60.pdf", "t14.pdf", "p50.pdf"]
         all_split_docs = []
         for filename in filenames:
+            filename_no_extension = os.path.splitext(filename)[0]
             docs = read_documents(filename)
             docs_split = split_documents(docs)
+            # prepend every document content with filename
+            for doc in docs_split:
+                doc.page_content = f"{filename_no_extension}\n{doc.page_content}"
             all_split_docs.extend(docs_split)
         db = load_documents(all_split_docs, embeddings)
 
     # infinite loop, get query from keyboard, run against db, print results
     while True:
-        query = input("Enter query: ")
+        query = input("\n\nEnter query:\n")
         if query == "exit":
             break
         # checking ChromaDB similarity search returning documents

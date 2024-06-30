@@ -7,7 +7,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_community.chat_message_histories import ChatMessageHistory
-from available_tools import add_contact, send_email, search_email_address_by_name, create_jira_ticket, send_message_to_google_chat_workspace, t60_t14_retriever, get_weather
+from available_tools import add_contact, send_email, search_email_address_by_name, create_jira_ticket, send_message_to_google_chat_workspace, t60_t14_p50_retriever, get_weather
 # set_debug(True)
 set_verbose(True)
 
@@ -20,8 +20,10 @@ set_verbose(True)
 system_msg = """
 You are a helpful assistant. 
 If you are unable to produce answer, just say so.
-Do not make guesses about emails or user IDs. If unsure, use the appropriate tool to find the information. If still unsure, ask the user.
+Do not make guesses about email addresses or user IDs. 
+If unsure, use the appropriate tool to find the information. If still unsure, ask the user.
 Do not use tools unless necessary. Use a tool multiple times one after another only if needed.
+If you need to know something not provided in the context, use appropriate tools.
 If uncertain about the user's context, ask for clarification.
 If asked to take action, perform action only once unless specifically asked to repeat.
 Please only respond to and act on the most recent human query. Previous messages are provided for context only.
@@ -42,7 +44,7 @@ memory = ChatMessageHistory(session_id="test-session")
 
 # communication tools
 tools = [send_email, create_jira_ticket, search_email_address_by_name,
-         add_contact, send_message_to_google_chat_workspace, t60_t14_retriever, get_weather]
+         add_contact, send_message_to_google_chat_workspace, t60_t14_p50_retriever, get_weather]
 
 model_id = "anthropic.claude-3-haiku-20240307-v1:0"
 model_kwargs = {
@@ -67,7 +69,7 @@ agent_with_chat_history = RunnableWithMessageHistory(
     agent_executor, lambda session_id: memory, input_messages_key="input", history_messages_key="chat_history")
 
 while True:
-    input_str = input("\n\n\nEnter your input: ")
+    input_str = input("\n\nEnter your input:\n")
     if input_str == "exit":
         break
 
