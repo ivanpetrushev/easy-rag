@@ -2,6 +2,9 @@ import os
 import json
 import requests
 from langchain_core.tools import tool
+from langchain_chroma import Chroma
+from langchain_community.embeddings import BedrockEmbeddings
+
 
 contact_book = {}
 
@@ -72,3 +75,68 @@ def send_message_to_google_chat_workspace(workspace_name: str, message: str):
     
     return result
 
+
+def get_embeddings():
+    embeddings = BedrockEmbeddings(
+        model_id="amazon.titan-embed-text-v2:0",
+    )
+    return embeddings
+
+db = None
+def load_chromadb():
+    global db
+    if db is not None:
+        return db
+    # load ChromaDB only if /chromadb is empty
+    if os.listdir("/chromadb"):
+        # use ChromaDB from disk
+        tmp_db = Chroma(persist_directory="/chromadb", embedding_function=get_embeddings())
+        db = tmp_db
+    else:
+        print(f"ChromaDB data not found in /chromadb")
+    
+@tool
+def t60_t14_retriever(query: str) -> str:
+    """
+    Retrieve information from the T60 or T14 database based on the query.
+    Usage:
+    - Use this when asked technical information about T60 and T14.
+    - Pass the whole user input as `query` parameter.
+    Output format instructions:
+    1. Start with the direct answer to the query without any preamble.
+    2. After the answer, provide a list of relevant documents in the following format:
+
+    Relevant Documents:
+    - Source: [filename/url], Page: [page number], Relevance: [0-100]
+    - Source: [filename/url], Page: [page number], Relevance: [0-100]
+    (Include as many documents as you use to compose the answer. "Relevance" is a score determined by you)
+    
+    Note: Always include the "Relevant Documents" section.
+    """
+    print(f"Function: t60_t14_retriever({query})")
+    load_chromadb()
+    if db is None:
+        return "ChromaDB not loaded"
+    results = db.similarity_search(query)
+
+    # debug - print all results in order (with index) with metadata and page_content
+    for i, result in enumerate(results):
+        print(f"\n===============> Result {i}: {result.metadata}")
+        print(f"Page content: {result.page_content}")
+    
+    return results
+
+@tool
+def get_weather(location: str):
+    """
+    Get the weather for a given location. 
+    Fetches a weater API that responds with JSON. 
+    Answer only in metric units, unless instructed otherwise.
+    """
+    print(f"Function: get_weather({location})")
+    url = f"http://api.weatherapi.com/v1/current.json?key={os.environ['WEATHER_API_KEY']}&q={location}&aqi=no"
+    response = requests.get(url)
+    if response.status_code != 200:
+        return f"Failed to get weather for {location}"
+    
+    return response.text

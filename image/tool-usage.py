@@ -7,7 +7,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_community.chat_message_histories import ChatMessageHistory
-from available_tools import add_contact, send_email, search_email_address_by_name, create_jira_ticket, send_message_to_google_chat_workspace 
+from available_tools import add_contact, send_email, search_email_address_by_name, create_jira_ticket, send_message_to_google_chat_workspace, t60_t14_retriever, get_weather
 # set_debug(True)
 set_verbose(True)
 
@@ -25,6 +25,7 @@ Do not use tools unless necessary. Use a tool multiple times one after another o
 If uncertain about the user's context, ask for clarification.
 If asked to take action, perform action only once unless specifically asked to repeat.
 Please only respond to and act on the most recent human query. Previous messages are provided for context only.
+If you use a tool and tool description contain more instructions about structure of your answer, follow them. 
 Explain your chain of thoughts.
 """
 
@@ -40,8 +41,8 @@ prompt = ChatPromptTemplate.from_messages([
 memory = ChatMessageHistory(session_id="test-session")
 
 # communication tools
-tools = [send_email, create_jira_ticket, search_email_address_by_name, 
-         add_contact, send_message_to_google_chat_workspace]
+tools = [send_email, create_jira_ticket, search_email_address_by_name,
+         add_contact, send_message_to_google_chat_workspace, t60_t14_retriever, get_weather]
 
 model_id = "anthropic.claude-3-haiku-20240307-v1:0"
 model_kwargs = {

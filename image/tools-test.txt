@@ -1,9 +1,29 @@
+### email, contacts
+
 add a new contact - her name is Alice and her email is alice@dot.com
 
 send email to Alice with a greeting
 
 send a message to Alice asking her when exactly tonight meeting is?
 
+### google chat
+
 Send a random color to google chat test_bot_space. Use complex colors out of the ordinary R, G, B.
 
 ask in the same workspace if people know you
+
+### T14, T60 retrievers
+
+what is the max memory configuration for T60?
+
+how to remove harddisk password for T14? where I can find more info?
+
+what is a TPM for T14?
+
+### weather API calling
+
+What is the weather in Plovdiv?
+
+Is weather in Sofia different than weather in Plovdiv?
+
+Is Plovdiv hotter than Stara Zagora right now?
