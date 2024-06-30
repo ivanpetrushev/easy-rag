@@ -8,10 +8,10 @@ build-images-quick:
 	docker build -t ${IMG_NAME} image/
 
 run-pdfloader: build-images-quick
-	docker run -it --env-file .env ${IMG_NAME}:latest python3 pdfloader.py
+	docker run -it --env-file .env -v ${PWD}/chromadb:/chromadb/ ${IMG_NAME}:latest python3 pdfloader.py
 
 run-tools: build-images-quick
-	docker run -it --env-file .env ${IMG_NAME}:latest python3 tool-usage.py
+	docker run -it --env-file .env -v ${PWD}/chromadb:/chromadb/ ${IMG_NAME}:latest python3 tool-usage.py
 
 pip-freeze:
 	docker run -it --env-file .env ${IMG_NAME}:latest pip freeze

@@ -4,11 +4,10 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_chroma import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import BedrockEmbeddings
-from langchain_chroma import Chroma
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
-from langchain_community.chat_models import BedrockChat
+from langchain_aws import ChatBedrock
 # for experiments with local embeddings
 # from langchain_community.embeddings.sentence_transformers import SentenceTransformersEmbeddings
 
@@ -31,7 +30,7 @@ def get_llm():
         "top_p": 0.999
     }
 
-    llm = BedrockChat(
+    llm = ChatBedrock(
         model_id=model_id,
         model_kwargs=model_kwargs)
     return llm
@@ -56,12 +55,11 @@ def get_prompt():
     return prompt_template
 
 
-def read_documents():
+def read_documents(filename):
     # loading pdf, but this can be replaced with any other document loader, including web crawlers
-    print("Step 1: Reading documents...")
-    file_path = "t60.pdf"
+    print(f"Step 1: Reading documents... {filename}")
 
-    loader = PyPDFLoader(file_path)
+    loader = PyPDFLoader(filename)
 
     time_start = time.time()
     docs = loader.load()
@@ -86,9 +84,9 @@ def split_documents(docs):
 
 
 def load_documents(docs_split, embeddings):
-    print("Step 3: Creating Chroma database...")
+    print(f"Step 3: Creating Chroma database... loading {len(docs_split)} documents...")
     time_start = time.time()
-    db = Chroma.from_documents(docs_split, embedding=embeddings)
+    db = Chroma.from_documents(docs_split, embedding=embeddings, persist_directory="/chromadb")
     time_end = time.time()
     print(f"Time elapsed: {time_end - time_start:.2f} s")
     return db
@@ -117,9 +115,18 @@ if __name__ == "__main__":
     embeddings = get_embeddings()
     llm = get_llm()
     prompt = get_prompt()
-    docs = read_documents()
-    docs_split = split_documents(docs)
-    db = load_documents(docs_split, embeddings)
+    # load ChromaDB only if /chromadb is empty
+    if os.listdir("/chromadb"):
+        # use ChromaDB from disk
+        db = Chroma(persist_directory="/chromadb", embedding_function=embeddings)
+    else:
+        filenames = ["t60.pdf", "t14_gen_1.pdf"]
+        all_split_docs = []
+        for filename in filenames:
+            docs = read_documents(filename)
+            docs_split = split_documents(docs)
+            all_split_docs.extend(docs_split)
+        db = load_documents(all_split_docs, embeddings)
 
     # infinite loop, get query from keyboard, run against db, print results
     while True:
